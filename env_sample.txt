@@ -1,0 +1,9 @@
+
+
+# Chromadb
+PERSIST_PATH = ""
+COLLECTION_NAME = ""
+
+# Models
+LLM_NAME = ""
+GROQ_API_KEY = ""

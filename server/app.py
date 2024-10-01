@@ -13,7 +13,7 @@ app.add_middleware(
 
 # Define a GET route for /query
 @app.get("/query")
-async def get_query(query: str):
+def get_query(query: str):
     # Simply return the query string
     answer = query
     return {"answer": answer}

@@ -5,7 +5,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # React app running on localhost
+    allow_origins=["http://localhost:3000", "https://repo-rag-template.vercel.app/"],  # React app running on localhost
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

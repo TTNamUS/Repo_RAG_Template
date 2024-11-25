@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const apiUrl = process.env.REACT_APP_API_URL;
+// const apiUrl = process.env.REACT_APP_API_URL;
 function App() {
   const [query, setQuery] = useState(''); // State to hold the query input
   const [response, setResponse] = useState(''); // State to hold the API response
@@ -13,7 +13,7 @@ function App() {
   // Function to call the API
   const callAPI = async () => {
     try {
-      const res = await fetch(`${apiUrl}/query?query=${query}`);
+      const res = await fetch(`https://repo-rag-template-server.vercel.app/query?query=${query}`);
       const data = await res.json(); // Assuming API returns a JSON object
       setResponse(data.answer); // Update response state with API result
     } catch (error) {

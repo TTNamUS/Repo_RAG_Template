@@ -15,5 +15,5 @@ app.add_middleware(
 @app.get("/query")
 def get_query(query: str):
     # Simply return the query string
-    answer = query
+    answer = query + '1'
     return {"answer": answer}

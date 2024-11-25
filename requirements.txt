@@ -1,4 +1,0 @@
-chromadb
-groq
-fastapi 
-uvicorn

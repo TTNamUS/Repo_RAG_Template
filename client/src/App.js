@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000';
 function App() {
   const [query, setQuery] = useState(''); // State to hold the query input
   const [response, setResponse] = useState(''); // State to hold the API response
